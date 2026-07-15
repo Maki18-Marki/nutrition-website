@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>GREEN BITE</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<header>
+
+<nav>
+
+<h2 class="logo">
+
+🌿 GREEN BITE
+
+</h2>
+
+<ul>
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#story">Story</a></li>
+
+<li><a href="#plate">Plate</a></li>
+
+<li><a href="#mission">Mission</a></li>
+
+<li><a href="#quiz">Quiz</a></li>
+
+<li><a href="#creator">Creator</a></li>
+
+</ul>
+
+<button id="themeButton">
+
+🌙
+
+</button>
+
+</nav>
+
+</header>
+
+<!-- HOME -->
+
+<section
+class="hero"
+id="home">
+
+<div class="heroText">
+
+<h4>
+
+WELCOME TO
+
+</h4>
+
+<h1>
+
+GREEN BITE
+
+</h1>
+
+<h2>
+
+Healthy Choices.
+
+Thriving Planet.
+
+Brighter Tomorrow.
+
+</h2>
+
+<p>
+
+Every healthy decision starts with one simple bite.
+
+Together we can nourish ourselves while protecting the Earth that provides our food.
+
+</p>
+
+<a href="#story">
+
+<button class="mainButton">
+
+Explore
+
+</button>
+
+</a>
+
+</div>
+
+<div class="heroImage">
+
+🌎
+
+</div>
+
+</section>
+
+<!-- STORY -->
+
+<section
+id="story">
+
+<div class="sectionTitle">
+
+<h1>
+
+Every Bite Shapes Tomorrow
+
+</h1>
+
+<p>
+
+Food is more than what fills our stomachs.
+
+It connects us to nature, our community, and our future.
+
+Choosing nutritious meals helps our bodies grow stronger, while protecting forests, rivers, farms, and oceans ensures that healthy food remains available for generations to come.
+
+When we care for ourselves and the environment together, every meal becomes a step toward a brighter tomorrow.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- HEALTHY PLATE -->
+
+<section
+id="plate">
+
+<h1>
+
+Build Your Healthy Plate
+
+</h1>
+
+<div class="cards">
+
+<div class="card">
+
+<div class="emoji">
+
+🥦
+
+</div>
+
+<h2>
+
+Vegetables
+
+</h2>
+
+<p>
+
+Rich in vitamins and minerals that strengthen the immune system.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<div class="emoji">
+
+🍎
+
+</div>
+
+<h2>
+
+Fruits
+
+</h2>
+
+<p>
+
+Natural sources of fiber and nutrients for a healthier body.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<div class="emoji">
+
+🍚
+
+</div>
+
+<h2>
+
+Whole Grains
+
+</h2>
+
+<p>
+
+Provides long-lasting energy for studying and daily activities.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<div class="emoji">
+
+🍗
+
+</div>
+
+<h2>
+
+Protein
+
+</h2>
+
+<p>
+
+Helps repair muscles and supports body growth.
+
+</p>
+
+</div>
+
+</div>
+
+</section><!-- ECO MISSION -->
+
+<section id="mission">
+
+<div class="sectionTitle">
+
+<h1>
+
+🌱 Today's Green Mission
+
+</h1>
+
+<p>
+
+Complete these simple actions and become a GREEN BITE Hero!
+
+</p>
+
+</div>
+
+<div class="missionContainer">
+
+<label class="task">
+
+<input type="checkbox" class="check">
+
+Drink 8 glasses of water 💧
+
+</label>
+
+<label class="task">
+
+<input type="checkbox" class="check">
+
+Eat one fruit today 🍎
+
+</label>
+
+<label class="task">
+
+<input type="checkbox" class="check">
+
+Finish your vegetables 🥦
+
+</label>
+
+<label class="task">
+
+<input type="checkbox" class="check">
+
+Use a reusable bottle ♻️
+
+</label>
+
+<label class="task">
+
+<input type="checkbox" class="check">
+
+Avoid wasting food 🌍
+
+</label>
+
+</div>
+
+<div class="progressBox">
+
+<h2>
+
+Mission Progress
+
+</h2>
+
+<div class="progressBar">
+
+<div id="progressFill">
+
+0%
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- QUIZ -->
+
+<section id="quiz">
+
+<div class="sectionTitle">
+
+<h1>
+
+🧠 Nutrition Challenge
+
+</h1>
+
+<p>
+
+Choose the healthiest answer.
+
+</p>
+
+</div>
+
+<div class="quizCard">
+
+<p>
+
+Which habit helps BOTH your health and the environment?
+
+</p>
+
+<button onclick="correctAnswer()">
+
+Eating balanced meals
+
+</button>
+
+<button onclick="wrongAnswer()">
+
+Throwing food away
+
+</button>
+
+<button onclick="wrongAnswer()">
+
+Skipping breakfast
+
+</button>
+
+<button onclick="wrongAnswer()">
+
+Burning plastic
+
+</button>
+
+<h2 id="quizResult"></h2>
+
+</div>
+
+</section>
+
+<!-- CREATOR -->
+
+<section id="creator">
+
+<div class="creatorCard">
+
+<h3>
+
+Created by
+
+</h3>
+
+<h1>
+
+Prescilliano Marklien A. LIM
+
+</h1>
+
+<h2>
+
+Section
+
+</h2>
+
+<p>
+
+12-ABM ST. Thomas
+
+</p>
+
+<p>
+
+GREEN BITE is an educational website promoting healthy eating and environmental responsibility through interactive learning.
+
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<h2>
+
+🌿 GREEN BITE
+
+</h2>
+
+<p>
+
+Healthy Choices. Thriving Planet. Brighter Tomorrow.
+
+</p>
+
+<p>
+
+© 2026 All Rights Reserved
+
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
